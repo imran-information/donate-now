@@ -44,14 +44,15 @@
         </nav>
         <!-- Donation & History BTN   -->
         <div class="my-14 flex justify-center gap-5">
-            <button class="text-xl font-semibold bg-primary-color text-color py-2 px-8 rounded-md ">Donation</button>
-            <button
+            <button id="donation-btn"
+                class="text-xl font-semibold bg-primary-color text-color py-2 px-8 rounded-md ">Donation</button>
+            <button id="history-btn"
                 class="text-xl font-semibold bg-white border-solid border-2 border-gray-600 b text-color py-2 px-8 rounded-md">History</button>
         </div>
     </header>
 
     <main class="w-4/5 mx-auto">
-        <section class="card-container">
+        <section id="all-content" class="card-container">
             <!-- noakhali donate Card -->
             <div class="card lg:card-side bg-white p-6 shadow-xl flex gap-8 border-solid border-2 border-gray-600 my-8">
                 <figure class="flex-1">
@@ -62,7 +63,8 @@
                         <img src="assets/coin.png" alt="" srcset="">
                         <span id="noakhali-balance">00</span>BDT
                     </div>
-                    <h2 class="card-title text-color text-xl font-bold mt-10">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="card-title text-color text-xl font-bold mt-10">Donate for Flood at Noakhali, Bangladesh
+                    </h2>
                     <p class="text-color font-medium text-base"> The recent floods in Noakhali have caused significant
                         damage to homes infrastructure. Your
                         donation will help provide essential supplies and to those affected by this disaster. Every
@@ -71,6 +73,7 @@
                     <div class="card-actions gap-5">
                         <input id="noakhali-input" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered input-success bg-white w-full border-solid border-2 border-gray-300" />
+                            <p id="noakhali-error-input" class="hidden">!Invalid Input</p>
                         <button id="noakhali-donate-btn"
                             class="text-xl font-semibold bg-primary-color text-color py-2 px-8 rounded-md w-full ">Donate
                             Now </button>
@@ -116,7 +119,8 @@
                         <img src="assets/coin.png" alt="" srcset="">
                         <span id="quota-balance">00</span> BDT
                     </div>
-                    <h2 class="card-title text-color text-xl font-bold mt-10">Donate for Flood at Quota Movement, Bangladesh
+                    <h2 class="card-title text-color text-xl font-bold mt-10">Donate for Flood at Quota Movement,
+                        Bangladesh
                     </h2>
                     <p class="text-color font-medium text-base"> The recent floods in Quota Movement have caused
                         significant
@@ -133,6 +137,15 @@
 
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="history-container" class="hidden">
+            <div id="history-item" class="grid sm:grid-cols-1 md:grid-cols-2 text-color gap-8 my-10">
+                <!-- <div class="bg-slate-300 p-6 rounded-lg">
+                    <h2>Donate for Flood at Quota Movement, Bangladesh</h2>
+                    <p>20-12-2005</p>
+                </div> -->
+                
             </div>
         </section>
     </main>

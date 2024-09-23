@@ -9,11 +9,7 @@
 function getInputValueById(id) {
     const inputValue = parseFloat(document.getElementById(id).value);
     return inputValue;
-    // if (!isNaN(inputValue) || inputValue < 0) {
-    // }
-    // else {
-    //     alert('Invalid Input')
-    // }
+
 
 };
 

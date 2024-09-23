@@ -46,7 +46,7 @@
         <h1 class="text-center font-bold text-5xl my-10">The blog page should contain 4 questions and their answers:
         </h1>
     </header>
-    <main class="w-11/12 mx-auto my-20">
+    <main class="w-4/5 mx-auto my-20">
         <section class="blogs-cotainer grid sm:grid-cols-1 md:grid-cols-2 gap-10">
             <div class="blogs">
                 <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
@@ -106,6 +106,23 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                    <h3 class="text-lg font-bold">Hello!</h3>
+                    <p class="py-4">Press ESC key or click the button below to close</p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+
         </section>
     </main>
     <script src="./js/donate.js"></script>
