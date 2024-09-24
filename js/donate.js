@@ -16,6 +16,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     const mainBalanceUpdate = mainBalance - noakhaliInputValue;
     document.getElementById('main-balance').innerText = mainBalanceUpdate;
 
+    //  modal payments Successfully 
     my_modal_1.showModal()
 
     const div = document.createElement('div');
@@ -46,6 +47,8 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
     const mainBalanceUpdate = mainBalance - feniInputValue;
     document.getElementById('main-balance').innerText = mainBalanceUpdate;
 
+    //  modal payments Successfully 
+    my_modal_1.showModal()
 
     const div = document.createElement('div');
     div.className = 'bg-slate-300 p-8 rounded-lg';
@@ -74,6 +77,8 @@ document.getElementById('quota-btn').addEventListener('click', function () {
     const mainBalanceUpdate = mainBalance - quotaInput;
     document.getElementById('main-balance').innerText = mainBalanceUpdate;
 
+    //  modal payments Successfully 
+    my_modal_1.showModal()
 
     const div = document.createElement('div');
     div.className = 'bg-slate-300 p-8 rounded-lg';
@@ -99,6 +104,7 @@ document.getElementById('history-btn').addEventListener('click', function () {
     const historyContainer = document.getElementById('history-container');
     historyContainer.classList.remove('hidden')
 });
+
 
 // Donation btn switch 
 document.getElementById('donation-btn').addEventListener('click', function () {
