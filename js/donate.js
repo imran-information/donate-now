@@ -54,7 +54,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
     div.className = 'bg-slate-300 p-8 rounded-lg';
     div.innerHTML = `
             <h2 class="card-title text-color text-xl font-bold">${feniInputValue} Taka Donate for Flood at Feni, Bangladesh</h2>
-            <p class="text-color font-medium text-base">Date: ${new Date().setUTCHours()}</p>
+            <p class="text-color font-medium text-base">Date: ${new Date().toLocaleDateString()}</p>
         `
     const historyItem = document.getElementById('history-item');
     historyItem.appendChild(div);
