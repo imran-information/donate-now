@@ -29,7 +29,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     const historyItem = document.getElementById('history-item');
     historyItem.appendChild(div);
     
-    document.getElementById('noakhali-input').value = ' ';
+    document.getElementById('noakhali-input').value = '';
 });
 
 
@@ -61,7 +61,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
     const historyItem = document.getElementById('history-item');
     historyItem.appendChild(div);
 
-    document.getElementById('feni-input').value = ' ';
+    document.getElementById('feni-input').value = '';
 });
 
 
@@ -94,7 +94,7 @@ document.getElementById('quota-btn').addEventListener('click', function () {
     historyItem.appendChild(div);
 
 
-    document.getElementById('quota-input').value = ' ';
+    document.getElementById('quota-input').value = '';
 })
 
 
