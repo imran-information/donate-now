@@ -19,15 +19,17 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     //  modal payments Successfully 
     my_modal_1.showModal()
 
+    
     const div = document.createElement('div');
     div.className = 'bg-slate-300 p-8 rounded-lg';
     div.innerHTML = `
-            <h2 class="card-title text-color text-xl font-bold">${noakhaliInputValue} Taka Donate for Flood at Nokhali, Bangladesh</h2>
-            <p class="text-color font-medium text-base">Date: ${new Date().toLocaleDateString()}</p>
-        `
+    <h2 class="card-title text-color text-xl font-bold">${noakhaliInputValue} Taka Donate for Flood at Nokhali, Bangladesh</h2>
+    <p class="text-color font-medium text-base">Date: ${new Date().toLocaleDateString()}</p>
+    `
     const historyItem = document.getElementById('history-item');
     historyItem.appendChild(div);
-
+    
+    document.getElementById('noakhali-input').value = ' ';
 });
 
 
@@ -58,6 +60,8 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
         `
     const historyItem = document.getElementById('history-item');
     historyItem.appendChild(div);
+
+    document.getElementById('feni-input').value = ' ';
 });
 
 
@@ -88,6 +92,9 @@ document.getElementById('quota-btn').addEventListener('click', function () {
         `
     const historyItem = document.getElementById('history-item');
     historyItem.appendChild(div);
+
+
+    document.getElementById('quota-input').value = ' ';
 })
 
 
