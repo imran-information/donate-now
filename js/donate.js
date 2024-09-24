@@ -1,10 +1,3 @@
-// Home to blogs
-// document.getElementById('home-btn').addEventListener('click', function () {
-//     location.href = './index.html'
-
-// });
-
-
 
 // Noakhali Donate Calculation
 document.getElementById('noakhali-donate-btn').addEventListener('click', function () {
@@ -22,6 +15,8 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     const mainBalance = getTextValueById('main-balance');
     const mainBalanceUpdate = mainBalance - noakhaliInputValue;
     document.getElementById('main-balance').innerText = mainBalanceUpdate;
+
+    my_modal_1.showModal()
 
     const div = document.createElement('div');
     div.className = 'bg-slate-300 p-8 rounded-lg';
@@ -56,7 +51,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
     div.className = 'bg-slate-300 p-8 rounded-lg';
     div.innerHTML = `
             <h2 class="card-title text-color text-xl font-bold">${feniInputValue} Taka Donate for Flood at Feni, Bangladesh</h2>
-            <p class="text-color font-medium text-base">Date: ${new Date().toLocaleDateString()}</p>
+            <p class="text-color font-medium text-base">Date: ${new Date().setUTCHours()}</p>
         `
     const historyItem = document.getElementById('history-item');
     historyItem.appendChild(div);
@@ -96,7 +91,7 @@ document.getElementById('history-btn').addEventListener('click', function () {
     const historyBtn = document.getElementById('history-btn');
     historyBtn.className = 'text-xl font-semibold bg-primary-color text-color py-2 px-8 rounded-md';
     const donationBtn = document.getElementById('donation-btn');
-    donationBtn.className = "text-xl font-semibold bg-white border-solid border-2 border-gray-600 b text-color py-2 px-8 rounded-md";
+    donationBtn.className = "text-xl font-semibold bg-white border-solid border-2 border-primary-color b text-color py-2 px-8 rounded-md";
 
     const allContent = document.getElementById('all-content');
     allContent.className = 'hidden'
@@ -110,7 +105,7 @@ document.getElementById('donation-btn').addEventListener('click', function () {
     const historyBtn = document.getElementById('donation-btn');
     historyBtn.className = 'text-xl font-semibold bg-primary-color text-color py-2 px-8 rounded-md';
     const donationBtn = document.getElementById('history-btn');
-    donationBtn.className = "text-xl font-semibold bg-white border-solid border-2 border-gray-600 b text-color py-2 px-8 rounded-md";
+    donationBtn.className = "text-xl font-semibold bg-white border-solid border-2 border-primary-color b text-color py-2 px-8 rounded-md";
 
     const allContent = document.getElementById('all-content');
     allContent.classList.remove('hidden');
